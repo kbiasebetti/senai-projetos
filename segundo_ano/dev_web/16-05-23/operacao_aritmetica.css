@@ -1,0 +1,14 @@
+body{
+    margin: 5px;
+    background-color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input{
+    border: 3px black;
+}
+button{
+    size: 5px;
+    border: 10px black;
+}
