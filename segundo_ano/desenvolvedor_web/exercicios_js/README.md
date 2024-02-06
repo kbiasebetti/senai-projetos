@@ -1,4 +1,4 @@
-# Lista de exercícios de JavaScript
+
 
 ## Aqui estão todas as questões solicitadas:
 
