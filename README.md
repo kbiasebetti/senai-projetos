@@ -37,6 +37,9 @@ Você é bem-vindo para contribuir com este repositório! Para contribuir, siga 
 Este repositório é disponibilizado sob os termos da Licença MIT, que permite o uso, cópia e modificação do código, tanto para fins comerciais quanto não comerciais, desde que a nota de direito autoral e a nota de licença sejam incluídas em todas as cópias ou partes substanciais do software.
 
 Para mais informações, consulte o arquivo [Licença MIT](https://opensource.org/licenses/MIT) neste repositório.
+##
+
+<br>
 
 >[!NOTE] 
 >
