@@ -44,4 +44,5 @@ Para mais informações, consulte o arquivo [Licença MIT](https://opensource.or
 >[!NOTE] 
 >
 >Esperamos que este repositório seja útil e contribua para o seu aprendizado contínuo em programação e desenvolvimento de software. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
+><br>
 >Happy coding! 🚀
