@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questão 04</title>
+</head>
+<body>
+    <h1>Cálculos de números randômicos</h1>
+    <p>Clique em "Gerar" para gerar números aleatórios, e em "Calcular" para fazer diversos cálculos!</p>
+    <p>OBS: O valor que for inserido será o tamanho do vetor!</p>
+    <br>
+    <div id="res_vetor">Vetor Randômico = []</div>
+    <label for="num">Insira o tamanho do vetor:</label>
+    <input type="text" id="num">
+    <br>
+    <button onclick="gerar()">Gerar</button>
+    <button onclick="calcular()">Calcular</button>
+    <br>
+    <div id="res_pares"></div>
+    <div id="res_impares"></div>
+    <div id="res_all_array"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
