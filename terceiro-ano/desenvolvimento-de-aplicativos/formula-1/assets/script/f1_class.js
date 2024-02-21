@@ -14,22 +14,40 @@ class Objeto {
 }
 
 class Carro extends Objeto {
-    dir = 0
-
+    dirX = 0
+    dirY = 0
     desenhaCarro(){
 
     }
 
     atualizaCarro(){
-        this.x = this.dir
+        this.x += this.dirX
+        this.y += this.dirY
+
         if (this.x <= 2) {
-            this.dir = 2
+            this.x = 2
         }
-        else if (this.x >= 480 - this.w) {
-            this.dir = 480 - this.w
+        else if (this.x >= 420) {
+            this.x = 420
+        }
+        if (this.y <= 1) {
+            this.y = 1
+        } else if (this.y >= 520) {
+            this.y = 520
         }
     }
 }
+
+class Carro02 extends Objeto { 
+    atualizaCarro02() {
+        this.y += 3
+        if (this.y >= 700) {
+            this.y -= 800
+            this.x = Math.floor(Math.random() * (416 - 2 + 1) + 2)
+        }
+    }
+}
+
 
 class Estrada extends Objeto {
     desenhaEstrada() {
@@ -44,3 +62,12 @@ class Estrada extends Objeto {
         }
     }
 }
+
+class Text {
+    desenhaTexto (text, x, y, cor, font) {
+       des.fillStyle = cor
+       des.lineWidth = '5'
+       des.font = font
+       des.fillText(text, x, y) 
+    }
+}zzzv
