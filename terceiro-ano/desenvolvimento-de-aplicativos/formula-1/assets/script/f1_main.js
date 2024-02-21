@@ -13,13 +13,13 @@ document.addEventListener('keydown', (e) => {
     else if (e.key === 'd' || e.key === 'ArrowRight') {
         carro.dir += 40
     }
-    else if (e.key === 'w' || e.key === 'ArrowUp') {
-        carro.y += -40
-    }
-    else if (e.key === 's' || e.key === 'ArrowDown') {
-        carro.y += 40
-    }
-})
+    // else if (e.key === 'w' || e.key === 'ArrowUp') {
+    //     carro.y += -40
+    // }
+    // else if (e.key === 's' || e.key === 'ArrowDown') {
+    //     carro.y += 40
+    // }
+    })
 
 document.addEventListener('keyup', (e) => {
     console.log(e.key)
