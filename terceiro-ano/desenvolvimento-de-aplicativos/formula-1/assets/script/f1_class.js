@@ -25,8 +25,8 @@ class Carro extends Objeto {
         if (this.x <= 2) {
             this.dir = 2
         }
-        else if (this.x >= 488 - this.w) {
-            this.dir = 488 - this.w
+        else if (this.x >= 480 - this.w) {
+            this.dir = 480 - this.w
         }
     }
 }
