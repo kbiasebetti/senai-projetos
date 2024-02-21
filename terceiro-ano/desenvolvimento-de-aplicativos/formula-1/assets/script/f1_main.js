@@ -1,8 +1,10 @@
 let des = document.getElementById('des').getContext('2d')
 
-let carro = new Carro (200,400,80,80,'red')
+let carro = new Carro (200,400,30,80,'red')
 let carro02 = new Carro02 (400,500,80,80,'blue')
 let carro03 = new Carro02 (132,10,80,80,'green')
+let carro04 = new Carro02 (328,200,80,80,'yellow')
+let carro05 = new Carro02 (651,120,80,80,'orange')
 let estradaEsquerda = new Estrada (10,0,10,696,'white')
 let estradaDireita = new Estrada (480,0,10,696,'white')
 let estradaCentral01 = new Estrada (240,50,10,150,'white')
@@ -54,12 +56,16 @@ function desenha() {
     carro.desenha_Objeto()
     carro02.desenha_Objeto()
     carro03.desenha_Objeto()
+    carro04.desenha_Objeto()
+    carro05.desenha_Objeto()
 }
 
 function atualiza() {
     estradaCentral01.moveEstrada()
     estradaCentral02.moveEstrada()
     estradaCentral03.moveEstrada()
+    carro05.atualizaCarro02()
+    carro04.atualizaCarro02()
     carro03.atualizaCarro02()
     carro02.atualizaCarro02()
     carro.atualizaCarro()
