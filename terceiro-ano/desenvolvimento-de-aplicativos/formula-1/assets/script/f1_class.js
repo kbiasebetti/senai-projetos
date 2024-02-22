@@ -16,6 +16,9 @@ class Objeto {
 class Carro extends Objeto {
     dirX = 0
     dirY = 0
+    pontuacao = 0
+    vida = 3
+
     desenhaCarro(){
 
     }
@@ -35,6 +38,20 @@ class Carro extends Objeto {
         } else if (this.y >= 520) {
             this.y = 520
         }
+
+    }
+
+    point(objeto) {
+        if ((objeto.y > 610)&&(objeto.y < 618)) {
+            return true
+        }
+    }
+
+    colid(objeto) {
+        if ((this.x < objeto.x + objeto.w)&&(this.x + this.w > objeto.x)&&(this.y < objeto.y + objeto.h)&&(this.y + this.h > objeto.y)){
+            return true
+        }
+
     }
 }
 
@@ -43,8 +60,13 @@ class Carro02 extends Objeto {
         this.y += 3
         if (this.y >= 700) {
             this.y -= 800
-            this.x = Math.floor(Math.random() * (416 - 2 + 1) + 2)
+            this.x = Math.floor(Math.random() * (416 - 20 + 1) + 20)
         }
+    }
+
+    recomeca() {
+        this.y = +700
+        
     }
 }
 
@@ -70,4 +92,4 @@ class Text {
        des.font = font
        des.fillText(text, x, y) 
     }
-}zzzv
+}
