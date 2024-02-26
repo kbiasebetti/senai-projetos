@@ -21,29 +21,104 @@ class Carro extends Objeto {
 
     desenhaCarro(){
 
+    // roda dianteira direita
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = "black"
+    des.rect(this.x+40,this.y-60,10,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
+
+    // roda dianteira esquerda
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = "black"
+    des.rect(this.x,this.y-60,10,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
+
+    // roda traseira direita
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = "black"
+    des.rect(this.x+40,this.y-20,10,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
+
+    // roda traseira esquerda
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = "black"
+    des.rect(this.x,this.y-20,10,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
+
+    // trapezio do carro
+    des.beginPath()
+    des.moveTo(this.x,this.y)  
+    des.lineTo(this.x+50,this.y)
+    des.lineTo(this.x+40,this.y-50)
+    des.lineTo(this.x+10,this.y-50)
+    des.closePath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = this.a
+    des.stroke()
+    des.fill()
+
+    // desenhando corpo frente em um retangulo
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = this.a
+    des.rect(this.x+10,this.y-70,30,20) 
+    des.closePath()
+    des.stroke()
+    des.fill()
+
+    // desenhando asa frente em um retangulo sobrescrevendo a borda
+    des.beginPath()
+    des.lineWidth = '5'
+    des.strokeStyle="black"
+    des.fillStyle = this.a
+    des.rect(this.x,this.y-80,50,10)
+    des.closePath()
+    des.stroke()
+    des.fill()
     }
 
     atualizaCarro(){
         this.x += this.dirX
         this.y += this.dirY
 
-        if (this.x <= 2) {
-            this.x = 2
+        if (this.x <= 30) {
+            this.x = 30
         }
         else if (this.x >= 420) {
             this.x = 420
         }
-        if (this.y <= 1) {
-            this.y = 1
-        } else if (this.y >= 520) {
-            this.y = 520
+        if (this.y <= 70) {
+            this.y = 70
+        } else if (this.y >= 590) {
+            this.y = 590
         }
 
     }
 
     point(objeto) {
-        if ((objeto.y > 610)&&(objeto.y < 618)) {
+        if(this.y > objeto.y) {
             return true
+        }
+        else {
+            return false
         }
     }
 
@@ -55,7 +130,7 @@ class Carro extends Objeto {
     }
 }
 
-class Carro02 extends Objeto { 
+class Carro02 extends Carro { 
     atualizaCarro02() {
         this.y += 3
         if (this.y >= 700) {
@@ -66,7 +141,6 @@ class Carro02 extends Objeto {
 
     recomeca() {
         this.y = +700
-        
     }
 }
 
