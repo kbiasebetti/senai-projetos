@@ -24,12 +24,13 @@ let motor = new Audio("./assets/sounds/somCarro.wav")
 let batida = new Audio("./assets/sounds/batida.wav")
 
 let jogar = true
+theme.play()
+motor.play()
 // FIM VARIAVEIS
 
 
 // AUDIO
-theme.play()
-motor.play()
+
 theme.volume = 0.3
 theme.loop = true
 motor.volume = 0.3
