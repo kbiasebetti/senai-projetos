@@ -1,0 +1,16 @@
+{
+  "name": "18-04-24",
+  "version": "1.0.0",
+  "description": "Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kauã Biasebetti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.6",
+    "sequelize": "^6.37.3"
+  }
+}
