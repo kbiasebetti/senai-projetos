@@ -46,7 +46,8 @@ button:hover {
     background-color: rgb(115, 115, 115);
 }
 
-#resposta {
+#resposta,
+#respostaGravar {
     text-align: center;
     margin-top: 60px;
 }
