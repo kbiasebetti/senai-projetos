@@ -13,14 +13,16 @@ app.use(cors())
 
 // ADICIONAR
 app.post('/user', async (req, res) => {
-    const dados = req.body
-    console.log(dados)
+    const user = req.body
+    console.log(user)
     try {
-        await User.create({nome: dados.nome, idade: dados.idade})
-        res.status(200).json(dados)
-    } catch(err) {
-        console.error('Erro ao gravar os dados!')
-        res.status(500).json({message: 'Erro na gravação dos dados'})
+        const dados = await User.create(user, {raw: true})
+        console.log(dados)
+        res.status(200).json({message: `Usuário cadastrado com sucesso!`})
+    }
+    catch(err) {
+        console.error(`Erro ao cadastrar usuário! ${err}`)
+        res.status(500).json({message: `Erro ao cadastrar usuário!`})
     }
 })
 
