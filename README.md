@@ -9,7 +9,7 @@ O propósito deste repositório é servir como um recurso educacional e de refer
 
 ## Conhecimentos Adquiridos
 
-- **Lógica de Programação**: Este tópico abrange os conceitos fundamentais de programação, incluindo algoritmos, estruturas de controle, resolução de problemas e outros fundamentos adicionais.
+- **Lógica de Programação**: Este tópico abrange os conhecimentos fundamentais de programação, incluindo algoritmos, estruturas de controle, resolução de problemas e outros fundamentos adicionais.
   
 - **HTML**: Aqui estão os arquivos HTML que foram criados durante o curso. HTML é a linguagem de marcação padrão para criar páginas web.
 
