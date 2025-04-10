@@ -23,7 +23,7 @@ O propósito deste repositório é servir como um recurso educacional e de refer
 
 ## Como Contribuir
 
-Você é bem-vindo para contribuir com este repositório! Para contribuir, siga estas etapas:
+Você é bem-vindo para contribuir com este repositório a hora que quiser! Para contribuir, siga estas etapas:
 
 1. Faça um fork deste repositório.
 2. Clone o fork para o seu ambiente local.
